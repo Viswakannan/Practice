@@ -9,24 +9,56 @@
 <body>
    <h1>&lt;&lt;&lt;&copy;Hello World!!!&copy;&gt;&gt;&gt;</h1>  <!--Here i'm using HTML Entities like &copy(copyright) &lt(less than), &gt(greater than), &nbsp (whitespace). These are exceptional cases in HTML.-->
    <hr>              <!--hr means Horizontal Rule, it doesn't have a closing tag-->
+   <h2>Let's Splash in HTML code</h2>
+   <figure>       <!--figure tag is used to indending purpose-->
+  <figcaption>HTML coding symbol</figcaption>
+  <a href="https://www.w3schools.com/html/">
+  <img src="imgs/symbol-2485367_1280.png" alt="code symbol" height="100" width="100" title="clink an image, to learn more about HTML" loading="lazy"></a> <!--here i used loading attribute and lazy value, so that to improve our site loading time-->  
+   </figure>
+  <hr>
+   <figure>       <!--figure tag is used to indending purpose-->
+   <h4>Example of a HTML code</h4>
+   <code>&lt;h1&gt;Hello World!!!&lt;/h1&gt;</code>
+   </figure>
+   <hr>
+   <nav><ul><li><a href="#fet">Front End Technologies</a></li> <!--nav tag is used to navigate web contents and we mentioned id(fet and bet) in section tag, we can call any contents via id-->
+              <li><a href="#bet">Back End Technologies</a></li></ul></nav> <!--this is what we called internal reference-->
+  <hr>
    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<---Welcome to My First Web Page---></p>  <!--Here i'm using &nbsp which used to put whitespaces on web page, whereas we don't give whitespaces--> 
-   <h2>I Learn <abbr title="HyperText Markup Language">HTML</abbr> from <abbr title="Mozilla Developer Network">MDN</abbr></h2>
+   <h2>I Learn <abbr title="HyperText Markup Language">HTML</abbr> from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org">MDN</a></abbr></h2>
+   <aside>  <!--want to give a hint, after clicking that aside arrow mark, user can read the summary which we give-->
+      	<details>
+		<summary>Guess the <mark>number of hours,</mark> I code per day</summary>
+		<p>I start at <time datetime="08:00">8 AM</time> and I write code for <time datetime="PT3H">3 hours </time>every morning.</p> 
+	</details>
+   </aside>
    <h2>Head and Meta</h2>
    <p>Firstly, i learned Meta tag, which contains data about the web page. Link tag where we link <em>stylesheets, javascripts etc.,</em></p>
    <h3>Text Basics</h3>
    <p>Secondly, i learned Text basics in <strong>HTML</strong>. Like Header Tags, Paragraph Tags etc.,</p>
    <hr>
+   <section id="fet"> <!--Here we create a section, so that we can easily navigate web contents via section, where id plays an important role-->
    <h4>Front End Technologies to Known:</h4>
    <ol><li>HTML</li>
           <li>CSS</li>
          <li>Javascript</li>
     </ol>
+    <dl><dt>HTML:</dt><dd>HTML is a Markup Language, where you can build your web page</dd></dl>
+    <dl><dt>CSS:</dt><dd>CSS is a styling technique, where you can enhance styles on your web page</dd></dl>
+    <dl><dt>Javascript:</dt><dd>JS is a Scripting Language, which helps to more interactive and responsive web pages</dd></dl>
+    </section>
+    <section id="bet">
    <h4>Back End Technologies to Known:</h4>
    <ul><li>Node JS</li>
           <li>SQL</li>
          <li>React JS</li>
     </ul>
-   <h3>Contact Me:</h3>
-   <address>Venkatraman St, NGO Colony, Nagamalai, Madurai-19.</address>
+     <dl><dt>Node JS:</dt><dd>Node.js® is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.</dd></dl>
+    <dl><dt>SQL:</dt><dd>SQL is a standard language for storing, manipulating and retrieving data in databases.</dd></dl>
+    <dl><dt>React JS:</dt><dd>React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript.</dd></dl>
+    </section>
+   <h3><a href="AboutMe.html">Contact Me:</a></h3>
+   <hr>
+   <p>Wanna back to top<a href="#">Click Here</a></p> <!--want return to top of page, we can call "#" reference alone-->	
 </body>
 </html>
